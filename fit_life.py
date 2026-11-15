@@ -23,7 +23,7 @@ print('-' * 40)
 
 print(
     f"Благодарим за данные, отчет для пользователя: {user_name}, "
-    f"возраст: {user_age} л."
+    f"возраст: {user_age} л.",
 )
 print(f"Индекс массы тела : {rounding_imt}")
 print(f"Рекомендуемая суточная норма воды : {rounding_water}")
