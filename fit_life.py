@@ -1,7 +1,8 @@
 print("Добро пожаловать в FitLive Treker")  # Приветствие
 
-personal_water_ml = 30
-personal_water_l = 1000
+PERSONAL_WATER_ML = 30
+PERSONAL_WATER_1 = 1000
+BORDER_LENGTH = 40
 
 user_name = input("Укажите Ваше имя :")  # Запрашиваем Имя
 user_age = int(input("Укажите ваш возраст :"))  # Запрашиваем Возраст
@@ -14,12 +15,12 @@ user_height = float(input("Укажите ваш рост (метры), "
 
 bmi = user_weight / (user_height ** 2)  # Узнаем ИМT(Индекс Массы Тела)
 rounding_imt = round(bmi, 1)  # Округляем ИМТ
-water_ml = user_weight * personal_water_ml  # Узнаем норму воды в МЛ
-water_l = water_ml / personal_water_l  # Переводим В литры
+water_ml = user_weight * PERSONAL_WATER_ML  # Узнаем норму воды в МЛ
+water_l = water_ml / PERSONAL_WATER_1  # Переводим В литры
 rounding_water = round(water_l, 1)  # Округляем норму литров
 
-print('-' * 40)
-print('-' * 40)
+print("-" * BORDER_LENGTH)
+print("-" * BORDER_LENGTH)
 
 print(
     f"Благодарим за данные, отчет для пользователя: {user_name}, "
